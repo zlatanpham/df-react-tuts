@@ -8,7 +8,7 @@ class LevelOneComponent extends React.Component {
         <h4>Level 1</h4>
 
       
-        <LevelTwoComponent />
+        <LevelTwoComponent onClick={this.props.onClick}/>
       </div>
     );
   }

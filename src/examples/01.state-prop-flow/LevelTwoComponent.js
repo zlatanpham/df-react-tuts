@@ -6,7 +6,7 @@ class LevelOneComponent extends React.Component {
     return (
       <div style={{padding: '20px', border: '1px solid #ddd'}}>
         <h4>Level 2</h4>
-        <LevelThreeComponent />
+        <LevelThreeComponent onClick={this.props.onClick}/>
       </div>
     );
   }

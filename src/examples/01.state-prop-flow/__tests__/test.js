@@ -11,10 +11,10 @@ test('click button to increase count', () => {
   const btn = getByText('Click me');
 
   fireEvent.click(btn);
-  expect(num.innerHTML).toBe('1');
+  expect(num.innerHTML).toBe('2');
   fireEvent.click(btn);
   fireEvent.click(btn);
-  expect(num.innerHTML).toBe('3');
+  expect(num.innerHTML).toBe('6');
 });
 
 afterEach(cleanup);
